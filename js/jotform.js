@@ -2435,12 +2435,7 @@ var JotForm = {
             parent.addClassName('validate[multipleUpload]');
 
             // Handle default validations. reuired field
-            var className = file.className;
-            if (className.include("validate[required]")) {
-                if (parent.className.indexOf("validate[required]") === -1) {
-                    parent.addClassName("validate[required]");
-                }
-            }
+            
 
             parent.validateInput = function() {
                 var _isVisible = JotForm.isVisible(parent);
