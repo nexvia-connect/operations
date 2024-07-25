@@ -18121,7 +18121,6 @@ var JotForm = {
                     && (!(window.FORM_MODE === 'cardform' && (inputContainer.dataset.type === 'control_checkbox' || inputContainer.dataset.type === 'control_radio' )))
                 ){
                     input.validateInput();
-                    var isInputErrored = input.hasClassName('form-validation-error');
                     var isEmailConfirmInput = input.id && input.id.indexOf("confirm") > -1;
                     var emailConfirmationInput = inputContainer.select('#' + input.id + '_confirm');
                     if (input.type == "email" && !isInputErrored && !isEmailConfirmInput && emailConfirmationInput.length > 0) {
